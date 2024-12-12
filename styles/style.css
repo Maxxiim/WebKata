@@ -19,5 +19,147 @@
   font-weight: 500;
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TT", sans-serif;
+  font-size: 24px;
+  color: rgb(27, 28, 33);
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.burger:hover {
+  border: 0.5px solid black;
+  background: #e93067;
+}
+.burger:hover .burger__line {
+  background: #3ede9e;
+}
+
+.burger__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger__line {
+  border-radius: 1px;
+  width: 100%;
+  margin-bottom: 3px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger__line-top {
+  width: 18px;
+}
+
+.burger__line-middle {
+  width: 10px;
+}
+
+.burger__line-bottom {
+  width: 14px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  width: 96.55px;
+  fill: #80949F;
+  stroke: #80949F;
+  transition: all 0.2s ease-in-out;
+}
+.logo:hover {
+  fill: #6e94a8;
+  stroke: #6e94a8;
+}
+
+.header__menu-repair {
+  cursor: pointer;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 62, 121);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.header__menu-repair:hover {
+  border: 0.5px solid black;
+}
+.header__menu-repair:hover .repair {
+  fill: #3ede9e;
+}
+
+.repair {
+  transition: all 0.2s ease-in-out;
+  fill: #fff;
+}
+
+.header__menu-search {
+  cursor: pointer;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 62, 121);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.header__menu-search:hover {
+  border: 0.5px solid black;
+}
+.header__menu-search:hover .search {
+  fill: #3ede9e;
+}
+
+.search {
+  transition: all 0.2s ease-in-out;
+  fill: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
