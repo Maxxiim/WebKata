@@ -104,6 +104,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 320px) {
+  .header__menu-logo {
+    margin-left: 16px;
+  }
+}
+
 .logo {
   cursor: pointer;
   width: 96.55px;
