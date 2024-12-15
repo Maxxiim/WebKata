@@ -24,6 +24,12 @@ body {
     font-weight: 500;
 }
 
+ul,
+li,
+ol {
+    list-style: none;
+}
+
 .container {
     max-width: 1150px;
     margin: 0 auto;
@@ -31,7 +37,7 @@ body {
     width: 100%;
 }
 
-// burget btn
+// burger btn
 .burger {
     cursor: pointer;
     display: flex;
@@ -46,7 +52,6 @@ body {
     transition: all .2s ease-in-out;
 
     &:hover {
-        border: .5px solid black;
         background: #e93067;
     }
 
@@ -64,9 +69,13 @@ body {
     border-radius: 1px;
     width: 100%;
     margin-bottom: 3px;
-    height: 2px;
+    height: 1.9px;
     background: #fff;
     transition: all .2s ease-in-out;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .burger__line-top {

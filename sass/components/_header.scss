@@ -1,6 +1,11 @@
 @use "../mixins" as *;
 
-.header {}
+.header {
+    @include media("phone") {
+        padding-top: 19px;
+        margin-bottom: 20px;
+    }
+}
 
 .header__menu {
     display: flex;
@@ -9,10 +14,15 @@
 
 .header__menu-burger {}
 
+.burger {
+    @include media("phone") {
+        margin-right: 16px;
+    }
+}
 
 .header__menu-logo {
     @include media("phone") {
-        margin-left: 16px;
+        margin-right: 38px;
     }
 }
 
@@ -30,6 +40,23 @@
 }
 
 .header__menu-repair {
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -19px;
+        height: 32px;
+        width: 2px;
+        background: rgb(234, 234, 234);
+    }
+
+    @include media("phone") {
+        margin-right: 16px;
+    }
+
     cursor: pointer;
     display: flex;
     width: 40px;
@@ -39,11 +66,6 @@
     background: rgb(255, 62, 121);
     border-radius: 50%;
     transition: all .2s ease-in-out;
-
-
-    &:hover {
-        border: .5px solid black;
-    }
 
     &:hover .repair {
         fill: #3ede9e;
@@ -66,10 +88,6 @@
     background: rgb(255, 62, 121);
     border-radius: 50%;
     transition: all .2s ease-in-out;
-
-    &:hover {
-        border: .5px solid black;
-    }
 
     &:hover .search {
         fill: #3ede9e;
