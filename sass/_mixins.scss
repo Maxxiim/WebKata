@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 @mixin respond-to($breakpoint) {
   @if $breakpoint ==xs {
     @media (max-width: 480px) {
@@ -35,7 +37,7 @@
     }
   }
 
-  @else if type-of($breakpoint)==number {
+  @else if meta.type-of($breakpoint)== "number" {
     @media (min-width: #{$breakpoint}px) {
       @content;
     }

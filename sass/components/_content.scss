@@ -4,6 +4,10 @@
     background: rgb(248, 248, 248);
     padding-top: 24px;
     padding-bottom: 32px;
+
+    @include respond-to(768) {
+        padding-top: 18px;
+    }
 }
 
 .content__title {
@@ -31,6 +35,12 @@
         width: 4px;
     }
 
+    @include respond-to(768) {
+        letter-spacing: 0.3px;
+        margin-bottom: 29px;
+        letter-spacing: -1px;
+    }
+
 }
 
 .content__nav {
@@ -55,6 +65,10 @@
         right: 0;
         background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
         box-shadow: -24px 0px 18px -7px rgba(34, 60, 80, 0.08);
+    }
+
+    @include respond-to(768) {
+        margin-bottom: 34px;
     }
 }
 
@@ -82,6 +96,11 @@
 
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    @include respond-to(768) {
+        margin-right: 25px;
+        letter-spacing: 0.1px;
+    }
 }
 
 .content__nav-list-item__active {
@@ -93,13 +112,28 @@
     margin-right: 20px;
     font-size: 16px;
     display: flex;
+
+    @include respond-to(768) {
+        letter-spacing: 0.2px;
+        min-width: 248px;
+        margin-right: 20px;
+        padding-left: 19px;
+    }
 }
 
 .content__wrapper {
     display: flex;
+
+    @include respond-to(768) {
+        gap: 39px;
+    }
 }
 
-.content__wrapper-text {}
+.content__wrapper-text {
+    @include respond-to(768) {
+        max-width: 320px;
+    }
+}
 
 .content__descr {
     margin-bottom: 16px;
@@ -115,6 +149,24 @@
 
     @include respond-to(601) {
         max-width: 260px;
+    }
+
+    @include respond-to(768) {
+        line-height: 19px;
+        max-width: 320px;
+        margin-bottom: 42px;
+    }
+}
+
+.content__descr__hidden {
+    display: none;
+
+    @include respond-to(768) {
+        display: inline-block;
+        height: 35px;
+        overflow: hidden;
+        margin-bottom: 4px;
+        max-width: 300px;
     }
 }
 
@@ -140,6 +192,13 @@
     background-repeat: no-repeat;
 
     @include respond-to(601) {
+        display: block;
+        width: 360px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @include respond-to(768) {
         display: block;
         width: 360px;
         background-position: center;

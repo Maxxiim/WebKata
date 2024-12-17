@@ -159,6 +159,11 @@ ol {
   padding-top: 19px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .header {
+    padding-top: 17px;
+  }
+}
 
 .header__menu {
   display: flex;
@@ -302,7 +307,8 @@ ol {
 }
 @media (min-width: 768px) {
   .header__menu-repair {
-    margin-left: 40px;
+    margin-left: 43px;
+    margin-right: 17px;
   }
 }
 
@@ -325,6 +331,11 @@ ol {
 .header__menu-search:hover .search {
   fill: #3ede9e;
 }
+@media (min-width: 768px) {
+  .header__menu-search {
+    margin-right: 20px;
+  }
+}
 
 .search {
   transition: all 0.2s ease-in-out;
@@ -335,6 +346,11 @@ ol {
   background: rgb(248, 248, 248);
   padding-top: 24px;
   padding-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .content {
+    padding-top: 18px;
+  }
 }
 
 .content__title {
@@ -359,6 +375,13 @@ ol {
   height: 100%;
   width: 4px;
 }
+@media (min-width: 768px) {
+  .content__title {
+    letter-spacing: 0.3px;
+    margin-bottom: 29px;
+    letter-spacing: -1px;
+  }
+}
 
 .content__nav {
   margin-right: -12px;
@@ -380,6 +403,11 @@ ol {
   right: 0;
   background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
   box-shadow: -24px 0px 18px -7px rgba(34, 60, 80, 0.08);
+}
+@media (min-width: 768px) {
+  .content__nav {
+    margin-bottom: 34px;
+  }
 }
 
 .content__nav-list {
@@ -403,6 +431,12 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media (min-width: 768px) {
+  .content__nav-list-item {
+    margin-right: 25px;
+    letter-spacing: 0.1px;
+  }
+}
 
 .content__nav-list-item__active {
   font-size: 16px;
@@ -414,9 +448,28 @@ ol {
   font-size: 16px;
   display: flex;
 }
+@media (min-width: 768px) {
+  .content__nav-list-item__active {
+    letter-spacing: 0.2px;
+    min-width: 248px;
+    margin-right: 20px;
+    padding-left: 19px;
+  }
+}
 
 .content__wrapper {
   display: flex;
+}
+@media (min-width: 768px) {
+  .content__wrapper {
+    gap: 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content__wrapper-text {
+    max-width: 320px;
+  }
 }
 
 .content__descr {
@@ -435,6 +488,26 @@ ol {
 @media (min-width: 601px) {
   .content__descr {
     max-width: 260px;
+  }
+}
+@media (min-width: 768px) {
+  .content__descr {
+    line-height: 19px;
+    max-width: 320px;
+    margin-bottom: 42px;
+  }
+}
+
+.content__descr__hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .content__descr__hidden {
+    display: inline-block;
+    height: 35px;
+    overflow: hidden;
+    margin-bottom: 4px;
+    max-width: 300px;
   }
 }
 
@@ -460,6 +533,14 @@ ol {
   background-repeat: no-repeat;
 }
 @media (min-width: 601px) {
+  .content__wrapper-img {
+    display: block;
+    width: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
   .content__wrapper-img {
     display: block;
     width: 360px;

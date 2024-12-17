@@ -3,6 +3,10 @@
 .header {
     padding-top: 19px;
     margin-bottom: 20px;
+
+    @include respond-to(768) {
+        padding-top: 17px;
+    }
 }
 
 .header__menu {
@@ -147,7 +151,8 @@
     }
 
     @include respond-to(768) {
-        margin-left: 40px;
+        margin-left: 43px;
+        margin-right: 17px;
     }
 }
 
@@ -169,6 +174,10 @@
 
     &:hover .search {
         fill: #3ede9e;
+    }
+
+    @include respond-to(768) {
+        margin-right: 20px;
     }
 }
 
