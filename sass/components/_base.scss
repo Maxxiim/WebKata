@@ -42,22 +42,44 @@ ol {
 // burger btn
 
 .header__menu-burger {
-    margin-right: 40px;
+    margin-right: 16px;
 
-    @include respond-to(480) {
-        margin-right: 144px;
+    @include respond-to(341) {
+        margin-right: 25px;
     }
 
-    @include respond-to(400) {
-        margin-right: 85px;
-    }
-
-    @include respond-to(340) {
+    @include respond-to(351) {
         margin-right: 30px;
     }
 
-    @include respond-to(320) {
-        margin-right: 16px;
+    @include respond-to(375) {
+        margin-right: 60px;
+    }
+
+    @include respond-to(415) {
+        margin-right: 100px;
+    }
+
+    @include respond-to(481) {
+        margin-right: 120px;
+    }
+
+    @include respond-to(601) {
+        margin-right: 40px;
+    }
+
+    @include respond-to(768) {
+        position: relative;
+
+        &:after{
+            content: "";
+        position: absolute;
+        top: 5px;
+        right: -19px;
+        height: 32px;
+        width: 2px;
+        background: rgb(234, 234, 234);
+        }
     }
 }
 

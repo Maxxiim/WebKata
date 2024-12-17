@@ -12,19 +12,19 @@
 
 
 .header__menu-logo {
+    flex: 1;
+    margin-right: 40px;
 
-    margin-right: 50px;
-
-    @include respond-to(480) {
-        margin-right: 70px;
+    @include respond-to(375) {
+        margin-right: 50px;
     }
 
-    @include respond-to(320) {
-        margin-right: 40px;
+    @include respond-to(481) {
+        margin-right: 90px;
     }
 
-    @include respond-to(340) {
-        margin-right: 40px;
+    @include respond-to(601) {
+        flex: 1;
     }
 }
 
@@ -39,6 +39,83 @@
         fill: #6e94a8;
         stroke: #6e94a8;
     }
+}
+
+.header__menu-call {
+    display: none;
+    margin-right: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 62, 121);
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+
+    &:hover .call {
+        fill: #3ede9e;
+    }
+
+    @include respond-to(768) {
+        display: inline-flex;
+    }
+}
+
+.call {
+    transition: all .2s ease-in-out;
+    fill: #fff;
+}
+
+.header__menu-message {
+    display: none;
+    margin-right: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 62, 121);
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+
+    &:hover .message {
+        fill: #3ede9e;
+    }
+
+    @include respond-to(768) {
+        display: inline-flex;
+    }
+}
+
+.message {
+    transition: all .2s ease-in-out;
+    fill: #fff;
+}
+
+.header__menu-person {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 62, 121);
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+
+    &:hover .person {
+        fill: #3ede9e;
+    }
+
+    @include respond-to(768) {
+        display: inline-flex;
+    }
+}
+
+.person {
+    transition: all .2s ease-in-out;
+    fill: #fff;
 }
 
 .header__menu-repair {
@@ -69,6 +146,9 @@
         fill: #3ede9e;
     }
 
+    @include respond-to(768) {
+        margin-left: 40px;
+    }
 }
 
 .repair {
