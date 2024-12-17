@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,27 @@ ol {
 }
 
 // burger btn
+
+.header__menu-burger {
+    margin-right: 40px;
+
+    @include respond-to(480) {
+        margin-right: 144px;
+    }
+
+    @include respond-to(400) {
+        margin-right: 85px;
+    }
+
+    @include respond-to(340) {
+        margin-right: 30px;
+    }
+
+    @include respond-to(320) {
+        margin-right: 16px;
+    }
+}
+
 .burger {
     cursor: pointer;
     display: flex;
