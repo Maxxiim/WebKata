@@ -7,6 +7,10 @@
     @include respond-to(768) {
         padding-top: 17px;
     }
+
+    @include respond-to(1120) {
+        display: none;
+    }
 }
 
 .header__menu {
@@ -29,6 +33,10 @@
 
     @include respond-to(601) {
         flex: 1;
+    }
+
+    @include respond-to(1120) {
+        display: none;
     }
 }
 
@@ -64,6 +72,10 @@
     @include respond-to(768) {
         display: inline-flex;
     }
+
+    @include respond-to(1120) {
+        display: none;
+    }
 }
 
 .call {
@@ -90,6 +102,10 @@
     @include respond-to(768) {
         display: inline-flex;
     }
+
+    @include respond-to(1120) {
+        display: none;
+    }
 }
 
 .message {
@@ -114,6 +130,10 @@
 
     @include respond-to(768) {
         display: inline-flex;
+    }
+
+    @include respond-to(1120) {
+        display: none;
     }
 }
 
@@ -154,6 +174,15 @@
         margin-left: 43px;
         margin-right: 17px;
     }
+
+    @include respond-to(1120) {
+        margin-right: 0;
+        margin-left: 0;
+
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .repair {
@@ -178,6 +207,10 @@
 
     @include respond-to(768) {
         margin-right: 20px;
+    }
+
+    @include respond-to(1120) {
+        margin-right: 0;
     }
 }
 
