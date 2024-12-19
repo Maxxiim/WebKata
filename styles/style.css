@@ -641,6 +641,11 @@ a {
 .content__wrapper {
   display: flex;
 }
+@media (min-width: 413px) {
+  .content__wrapper {
+    justify-content: space-between;
+  }
+}
 @media (min-width: 740px) {
   .content__wrapper {
     justify-content: space-between;

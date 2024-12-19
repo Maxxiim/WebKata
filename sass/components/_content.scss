@@ -255,6 +255,10 @@
 .content__wrapper {
     display: flex;
 
+    @include respond-to(413) {
+        justify-content: space-between;
+    }
+    
     @include respond-to(740) {
         justify-content: space-between;
     }
