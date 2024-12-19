@@ -609,15 +609,6 @@ a {
   }
 }
 
-.content__nav-list-item a:focus {
-  border-radius: 6px;
-  padding: 6px 7px 6px 7px;
-  outline: none;
-  color: #ff3e79;
-  background-color: #fff;
-  border: 2px solid #ffe0e9;
-}
-
 .content__nav-list-item__active {
   font-size: 16px;
   color: rgb(126, 126, 130);
@@ -626,7 +617,6 @@ a {
   padding: 8px 9px 8px 10px;
   margin-right: 20px;
   font-size: 16px;
-  display: flex;
 }
 .content__nav-list-item__active:hover {
   border-radius: 6px;
