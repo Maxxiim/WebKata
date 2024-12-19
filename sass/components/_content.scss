@@ -18,7 +18,6 @@
 }
 
 .content__title {
-    // Проверить шрифты подключение
     margin-bottom: 24px;
     position: relative;
     margin-left: -15px;
@@ -192,7 +191,6 @@
 }
 
 .content__nav-list-item {
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -226,6 +224,16 @@
     }
 }
 
+.content__nav-list-item a {
+    &:focus {
+        border-radius: 6px;
+        padding: 6px 7px 6px 7px;
+        outline: none;
+        color: #ff3e79;
+        background-color: #fff;
+        border: 2px solid #ffe0e9;
+    }
+}
 .content__nav-list-item__active {
     font-size: 16px;
     color: rgb(126, 126, 130);

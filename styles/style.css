@@ -1,21 +1,21 @@
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Regular.eot");
-  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("TTLakes-Regular.woff") format("woff"), url("TTLakes-Regular.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Bold.eot");
-  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("TTLakes-Bold.woff") format("woff"), url("TTLakes-Bold.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Bold.woff") format("woff"), url("../fonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Medium.eot");
-  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("TTLakes-Medium.woff") format("woff"), url("TTLakes-Medium.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -607,6 +607,15 @@ a {
     margin-left: 8px;
     margin-bottom: 0;
   }
+}
+
+.content__nav-list-item a:focus {
+  border-radius: 6px;
+  padding: 6px 7px 6px 7px;
+  outline: none;
+  color: #ff3e79;
+  background-color: #fff;
+  border: 2px solid #ffe0e9;
 }
 
 .content__nav-list-item__active {
