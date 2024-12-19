@@ -161,6 +161,7 @@
     }
 
     @include respond-to(1120) {
+
         &::before,
         &::after {
             display: none;
@@ -254,8 +255,20 @@
 .content__wrapper {
     display: flex;
 
+    @include respond-to(740) {
+        justify-content: space-between;
+    }
+
     @include respond-to(768) {
         gap: 39px;
+    }
+
+    @include respond-to(844) {
+        justify-content: space-between;
+    }
+
+    @include respond-to(896) {
+        justify-content: space-between;
     }
 
     @include respond-to(992) {

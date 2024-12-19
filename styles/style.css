@@ -641,9 +641,24 @@ a {
 .content__wrapper {
   display: flex;
 }
+@media (min-width: 740px) {
+  .content__wrapper {
+    justify-content: space-between;
+  }
+}
 @media (min-width: 768px) {
   .content__wrapper {
     gap: 39px;
+  }
+}
+@media (min-width: 844px) {
+  .content__wrapper {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 896px) {
+  .content__wrapper {
+    justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
